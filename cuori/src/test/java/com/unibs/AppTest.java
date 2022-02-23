@@ -1,4 +1,4 @@
-package src.test.java.com.unibs;
+package cuori.src.test.java.com.unibs;
 
 import static org.junit.Assert.assertTrue;
 

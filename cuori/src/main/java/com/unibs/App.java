@@ -1,8 +1,7 @@
-package src.main.java.com.unibs;
+package cuori.src.main.java.com.unibs;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/** Hello world! */
 public class App {
   public static void main(String[] args) {
     Scanner inputScanner = new Scanner(System.in);

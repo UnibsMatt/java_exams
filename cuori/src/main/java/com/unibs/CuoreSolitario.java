@@ -1,4 +1,4 @@
-package src.main.java.com.unibs;
+package cuori.src.main.java.com.unibs;
 
 public class CuoreSolitario {
     /*
