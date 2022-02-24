@@ -1,6 +1,9 @@
 package traduttore.src.main.java.com.unibs;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class TraduttoreTester {
   public static void main(String[] args) {
@@ -8,6 +11,25 @@ public class TraduttoreTester {
       System.err.println("Missing parameters or given both args the same file");
       System.exit(1);
     }
+    String filename1 = args[0];
+    String filename2 = args[1];
+    try{
+
+      Scanner fileReader = new Scanner(new FileReader(filename1));
+    }catch (FileNotFoundException e)
+    {
+      System.err.format("File %s not found", filename1 );
+      System.exit(1);
+    }
+    try{
+
+      Scanner fileReader2 = new Scanner(new FileReader(filename2));
+    }catch (FileNotFoundException e)
+    {
+      System.err.format("File %s not found", filename1 );
+      System.exit(1);
+    }
+
     Traduttore mioTraduttore = new Traduttore();
   }
 }
